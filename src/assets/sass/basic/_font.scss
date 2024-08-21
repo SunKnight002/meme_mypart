@@ -1,19 +1,33 @@
 $fontsize:(
-    h1:  54px,
-    h2:  28px,
-    h3:  20px,
-    p:   18px
+    "h1":  54px,
+    "h2":  28px,
+    "h3":  20px,
+    "p":   18px
 );
+
+$lineheight:(
+    "h1":  2,
+    "h2":  2,
+    "h3":  2,
+    "p":   2.3
+);
+
 
 body {
     font-family: Noto Sans TC;
-    line-height: 2.3;
 }
 
-h1,h2,h3{
-    line-height: 2;
-}
 
-p{
-    line-height: 2.3;
+
+
+
+@each $k,$v in $fontsize{
+    #{$k}{
+        font-size: $v;
+    }
+}
+@each $k,$v in $lineheight{
+    #{$k}{
+        line-height: $v;
+    }
 }

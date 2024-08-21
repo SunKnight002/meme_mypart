@@ -7,6 +7,7 @@ $colors:(
     yellow:#FEDA77,         
     lightblue:#262B3F,
     darkred:#870801,
+    mdnightblue:#221F3C,
     underyellow:#FFC700,
     underred:#B00000,
     lightgreen: #D8FFDF,
@@ -17,4 +18,5 @@ $colors:(
 
 body {
     background-color: map-get($colors, darkblue );
+    color: map-get($colors, white)
 }

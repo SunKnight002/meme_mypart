@@ -6,7 +6,7 @@
     display: flex;
     line-height: 70px;
 
-    @include headft{
+    @include rwd(650px){
         position: relative;
         height: 100px;
     }
@@ -19,7 +19,7 @@
     height: 70px;
     padding-left: 80px;
 
-    @include headft{
+    @include rwd(650px){
         width: 70px;
         padding: 0;
         margin-left: 20px;
@@ -32,7 +32,7 @@
     margin-top: 24px;
     display: none;
 
-    @include headft{
+    @include rwd(650px){
         text-align: center;
         display: block;
         margin-top: 35px;
@@ -48,7 +48,7 @@
     font-size: 20px;
     display: flex;
 
-    @include headft{
+    @include rwd(650px){
         display: none;
         flex-direction: column;
         position: absolute;
@@ -67,7 +67,7 @@
 .top li {
     margin-right: 20px;
 
-    @include headft{
+    @include rwd(650px){
         margin: 0;
     }
 
@@ -78,6 +78,6 @@
     display: block;
     color:map-get($colors,  white);
     &:hover{
-        color: map-get($colors,  hover);
+        color: map-get($colors,  gold);
     }
 }
