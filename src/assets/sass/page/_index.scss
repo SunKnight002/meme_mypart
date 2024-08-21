@@ -1,0 +1,4 @@
+h1{
+    color: map-get($colors, fontcolor);
+    font-size: map-get($fontsize, h1);
+}   
